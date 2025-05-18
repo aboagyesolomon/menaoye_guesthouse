@@ -10,7 +10,7 @@ const Header = () => {
                     <div class="full">
                        <div class="center-desk">
                           <div class="logo">
-                             <a href="/dashboard"><img src="assets/images/logo.png" alt="#" /></a>
+                             <a href="/dashboard"><img src="assets/images" alt="#" /></a>
                           </div>
                        </div>
                     </div>
@@ -29,7 +29,7 @@ const Header = () => {
                                 <a class="nav-link" href="/about">About</a>
                              </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="/room">Our room</a>
+                                <a class="nav-link" href="/room">Our rooms</a>
                              </li>
                              <li class="nav-item">
                                 <a class="nav-link" href="/gallery">Gallery</a>
