@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Carousel = () => {
+   const [arrival, setArrival] = useState('');
+   const [departure, setDeparture] = useState('');
+   const navigate = useNavigate();
+
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      navigate('/bookonline', {
+        state: { arrival, departure },
+      });
+    };
+
     return (
         <div>
             <section class="banner_main">
@@ -38,17 +50,17 @@ const Carousel = () => {
                   <div class="col-md-5">
                      <div class="book_room">
                         <h1>Book a Room Online</h1>
-                        <form class="book_now">
+                        <form class="book_now" onSubmit={handleSubmit}>
                            <div class="row">
-                              <div class="col-md-12">
+                              {/* <div class="col-md-12">
                                  <span>Name</span>
                                  <input class="online_book" placeholder="Full Name" type="text" name="FUll Name"/>
-                              </div>
-                              <div class="col-md-12">
+                              </div> */}
+                              {/* <div class="col-md-12">
                                  <span>Phone Number</span>
                                  <input class="online_book" placeholder="Contact" type="number" name="Contact"/>
-                              </div>
-                              <div class="col-md-12">
+                              </div> */}
+                              {/* <div class="col-md-12">
                                  <span>Number of Rooms</span>
                                  <select class="online_book" placeholder="Number of Rooms" type="number" name="Number of Rooms">
                                     <option>--Select Number of Rooms--</option>
@@ -67,19 +79,17 @@ const Carousel = () => {
                                     <option>14</option>
                                     <option>15</option>
                                  </select>
-                              </div>
+                              </div> */}
                               <div class="col-md-12">
                                  <span>Arrival</span>
-                                 <img class="date_cua" src="assets/images/date.png"/>
-                                 <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                                 <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy" value={arrival} onChange={(e) => setArrival(e.target.value)} required/>
                               </div>
                               <div class="col-md-12">
                                  <span>Departure</span>
-                                 <img class="date_cua" src="assets/images/date.png"/>
-                                 <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                                 <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy" value={departure} onChange={(e) => setDeparture(e.target.value)} required/>
                               </div>
                               <div class="col-md-12">
-                                 <button class="book_btn">Book Now</button>
+                                 <button class="book_btn" type='submit'>Book Now</button>
                               </div>
                            </div>
                         </form>
