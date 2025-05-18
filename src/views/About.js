@@ -52,7 +52,7 @@ const About = () => {
       <div className="col-md-7">
         <div className="about_img">
           <figure>
-            <img src="/assets/images/MOMS.JPG" alt="..." />
+            <img src="assets/images/CEO.jpg" alt="..." />
           </figure>
         </div>
       </div>
