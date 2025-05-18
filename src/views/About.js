@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
 
     return(<>
-           <div className="back_re">
+    <div className="back_re">
   <div className="container">
     <div className="row">
       <div className="col-md-12">
@@ -52,7 +52,7 @@ const About = () => {
       <div className="col-md-7">
         <div className="about_img">
           <figure>
-            <img src="/assets/images/MOMS.jpg" alt="..." />
+            <img src="/assets/images/MOMS.JPG" alt="..." />
           </figure>
         </div>
       </div>
