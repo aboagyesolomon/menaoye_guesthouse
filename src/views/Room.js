@@ -9,7 +9,7 @@ const Room = () => {
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>Our Room</h2>
+                     <h2>Our Rooms</h2>
                   </div>
                </div>
             </div>

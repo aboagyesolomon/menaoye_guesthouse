@@ -10,16 +10,16 @@ const Footer = () => {
                      <h3>Contact US</h3>
                      <ul class="conta">
                         <li><i class="fa fa-map-marker" aria-hidden="true"></i> Address</li>
-                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
-                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> menaoye@gmail.com</a></li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +233 (0) 53 008 7080</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> menaoye24@gmail.com</a></li>
                      </ul>
                   </div>
                   <div class="col-md-4">
                      <h3>Menu Link</h3>
                      <ul class="link_menu">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="/about"> about</a></li>
-                        <li><a href="/room">Our Room</a></li>
+                        <li><a href="/about"> About</a></li>
+                        <li><a href="/room">Our Rooms</a></li>
                         <li><a href="/gallery">Gallery</a></li>
                         <li><a href="/blog">Blog</a></li>
                         <li><a href="/contact">Contact Us</a></li>

@@ -23,7 +23,7 @@ const About = () => {
         <div className="titlepage">
           <h3>About the CEO – Mr. Dominic Amoako</h3>
           <p className="margin_0">
-            I’m Dominic Amoako, a retired U.S. Army veteran whose life has been shaped by discipline, leadership, and service. With experience in regions like Iraq, Afghanistan, and Syria, I’ve led operations in some of the most complex environments on earth.
+            I’m Dominic Amoako, U.S. Army veteran whose life has been shaped by discipline, leadership, and service. With experience in regions like Iraq, Afghanistan, and Syria, I’ve led operations in some of the most complex environments on earth.
             <br /><br />
             My roles in electronic systems and security have taught me to lead with calm, protect what matters, and ensure operational excellence under pressure. I hold certifications in Project Management (PMP), Security+, and Six Sigma Green Belt—each helping me continue that mission beyond the military.
             <br /><br />
@@ -62,7 +62,7 @@ const About = () => {
         <div className="titlepage">
           <h3>Who We Are – Mena Oye Guest House</h3>
           <p>
-            Founded in November 2024 in loving memory of <strong>Madam Ardey Gladys Kortey</strong>, Mena Oye Guest House was created to reflect the warmth, care, and generosity she embodied.
+            Founded in November 2024 in loving memory of <strong>Madam Gladys Ardey Kortey</strong>, Mena Oye Guest House was created to reflect the warmth, care, and generosity she embodied.
             <br /><br />
             We offer more than accommodation—we offer a home away from home. Every guest is welcomed with authentic hospitality and treated with heartfelt attention.
             <br /><br />

@@ -12,7 +12,7 @@ const DashBoard = () => {
                <div class="col-md-5">
                   <div class="titlepage">
                      <h2>About Us</h2>
-                     <p>Founded in November 2024 in loving memory of <strong>Madam Ardey Gladys Kortey</strong>, Mena Oye Guest House was created to reflect the warmth, care, and generosity she embodied.
+                     <p>Founded in November 2024 in loving memory of <strong>Madam Gladys Ardey Kortey</strong>, Mena Oye Guest House was created to reflect the warmth, care, and generosity she embodied.
                         <br /><br />
                         We offer more than accommodation—we offer a home away from home. Every guest is welcomed with authentic hospitality and treated with heartfelt attention.
                         <br /><br />
@@ -38,7 +38,7 @@ const DashBoard = () => {
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Our Room</h2>
+                     <h2>Our Rooms</h2>
                      <p>Lorem Ipsum available, but the majority have suffered </p>
                   </div>
                </div>
