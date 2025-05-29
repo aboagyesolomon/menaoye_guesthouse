@@ -9,7 +9,7 @@ const Footer = () => {
                   <div class=" col-md-4">
                      <h3>Contact US</h3>
                      <ul class="conta">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Address</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Asamang Tamfoe</li>
                         <li><i class="fa fa-mobile" aria-hidden="true"></i> +233 (0) 53 008 7080</li>
                         <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> menaoye24@gmail.com</a></li>
                      </ul>

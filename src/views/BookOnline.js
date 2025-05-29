@@ -4,7 +4,7 @@ import * as Swal from 'sweetalert2';
 
 const generateTimeOptions = () => {
   const times = [];
-  const hours = [...Array(12).keys()].map(i => i + 1); // 1-12
+  const hours = [...Array(12).keys()].map(i => i + 1);
   const minutes = ['00', '15', '30', '45'];
   const meridiems = ['AM', 'PM'];
 
@@ -19,6 +19,20 @@ const generateTimeOptions = () => {
   return times.map(time => (
     <option key={time} value={time}>{time}</option>
   ));
+};
+
+const calculateTotalPrice = (arrival, departure, rooms, ratePerDay = 350) => {
+  const arrivalDate = new Date(arrival);
+  const departureDate = new Date(departure);
+
+  if (isNaN(arrivalDate) || isNaN(departureDate)) return null;
+
+  const timeDiff = departureDate.getTime() - arrivalDate.getTime();
+  const dayDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+  if (dayDiff <= 0) return null;
+
+  return ratePerDay * rooms * dayDiff;
 };
 
 const BookOnline = () => {
@@ -45,9 +59,16 @@ const BookOnline = () => {
         [name]: value,
       };
 
-      if (name === "rooms") {
-        const total = 350 * parseInt(value);
+      const rooms = parseInt(name === "rooms" ? value : prev.rooms);
+      const arrivalDate = name === "arrival" ? value : prev.arrival;
+      const departureDate = name === "departure" ? value : prev.departure;
+
+      const total = calculateTotalPrice(arrivalDate, departureDate, rooms);
+
+      if (total !== null) {
         updatedData.price = `${total} Ghana Cedis`;
+      } else {
+        updatedData.price = "Invalid date range";
       }
 
       return updatedData;
@@ -57,7 +78,14 @@ const BookOnline = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const total = 350 * parseInt(formData.rooms);
+    const rooms = parseInt(formData.rooms);
+    const total = calculateTotalPrice(formData.arrival, formData.departure, rooms);
+
+    if (total === null) {
+      await Swal.fire('Error', 'Invalid date range. Please check your arrival and departure dates.', 'error');
+      return;
+    }
+
     const deposit = total * 0.3;
 
     const result = await Swal.fire({
@@ -85,6 +113,7 @@ const BookOnline = () => {
 
     const requestBody = {
       ...formData,
+      price: `${total} Ghana Cedis`,
       email: 'menaoye24@gmail.com',
       message: `
         <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #eee; border-radius: 8px; max-width: 600px; margin: auto; background-color: #f9f9f9;">
@@ -96,9 +125,9 @@ const BookOnline = () => {
             <tr><td style="padding: 8px;"><strong>Contact:</strong></td><td style="padding: 8px;">${formData.contact}</td></tr>
             <tr><td style="padding: 8px;"><strong>Rooms:</strong></td><td style="padding: 8px;">${formData.rooms}</td></tr>
             <tr><td style="padding: 8px;"><strong>Arrival:</strong></td><td style="padding: 8px;">${formData.arrival}</td></tr>
-            <tr><td style="padding: 8px;"><strong>Arrival:</strong></td><td style="padding: 8px;">${formData.arrivalTime}</td></tr>
+            <tr><td style="padding: 8px;"><strong>Arrival Time:</strong></td><td style="padding: 8px;">${formData.arrivalTime}</td></tr>
             <tr><td style="padding: 8px;"><strong>Departure:</strong></td><td style="padding: 8px;">${formData.departure}</td></tr>
-            <tr><td style="padding: 8px;"><strong>Price:</strong></td><td style="padding: 8px;">${formData.price}</td></tr>
+            <tr><td style="padding: 8px;"><strong>Price:</strong></td><td style="padding: 8px;">${total} Ghana Cedis</td></tr>
           </table>
           <p style="font-size: 16px;">Kindly follow up as necessary.</p>
           <p style="font-size: 16px; color: #555;">Best regards,<br/><strong>Mena Oye Booking System</strong></p>
@@ -268,6 +297,7 @@ const BookOnline = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

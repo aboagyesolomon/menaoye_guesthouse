@@ -12,7 +12,7 @@ const DashBoard = () => {
                <div class="col-md-5">
                   <div class="titlepage">
                      <h2>About Us</h2>
-                     <p>Founded in November 2024 in loving memory of <strong>Madam Gladys Ardey Kortey</strong>, Mena Oye Guest House was created to reflect the warmth, care, and generosity she embodied.
+                     <p>Founded in November 2024 in loving memory of <strong>Madam Gladys Ardey Kortey</strong>, Mena Oye Guest House located at Asamang Tamfoe  was created to reflect the warmth, care, and generosity she embodied.
                         <br /><br />
                         We offer more than accommodation—we offer a home away from home. Every guest is welcomed with authentic hospitality and treated with heartfelt attention.
                         <br /><br />
