@@ -285,15 +285,7 @@ const BookOnline = () => {
             <div className="col-md-6">
               <div className="map_main">
                 <div className="map-responsive">
-                  <iframe
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
-                    width="600"
-                    height="400"
-                    frameBorder="0"
-                    style={{ border: "0", width: "100%" }}
-                    allowFullScreen=""
-                    title="Google Map"
-                  ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2882.641101184582!2d-0.5274145409350155!3d6.368948455899383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf2ba816fe46b5%3A0x338a1a6341f71c44!2sMenaOye%20Guest%20House!5e0!3m2!1sen!2sgh!4v1748949740280!5m2!1sen!2sgh" width="600" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
