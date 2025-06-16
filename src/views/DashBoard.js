@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
+import ComingSoon from "./CoomingSoon";
 
 const DashBoard = () => {
 
@@ -47,66 +48,66 @@ const DashBoard = () => {
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room1.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom6.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
                         <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <p>If you are going to use a passage of pleasure, you need to be sure there </p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room2.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom7.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
                         <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <p>If you are going to use a passage of peace, you need to be sure there </p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room3.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom8.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Wash Room</h3>
+                        <p>If you are going to use a passage of comfort, you need to be sure there </p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room4.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom4.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Bath Room</h3>
+                        <p>If you are going to use a passage of comfort, you need to be sure there </p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room5.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom5.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Cooking Area</h3>
+                        <p>Kitchens, in every room we take care of your cravings as well as your comfort.</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/room6.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom3.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <h3>Alley Way</h3>
+                        <p>If you are going to use a passage of comfort, you need to be sure there </p>
                      </div>
                   </div>
                </div>
@@ -124,7 +125,7 @@ const DashBoard = () => {
                </div>
             </div>
             <div class="row">
-               <div class="col-md-3 col-sm-6">
+               {/* <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
                      <figure><img src="assets/images/gallery1.jpg" alt="#"/></figure>
                   </div>
@@ -163,7 +164,8 @@ const DashBoard = () => {
                   <div class="gallery_img">
                      <figure><img src="assets/images/gallery8.jpg" alt="#"/></figure>
                   </div>
-               </div>
+               </div> */}
+                <ComingSoon />
             </div>
          </div>
       </div>
@@ -173,12 +175,12 @@ const DashBoard = () => {
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Blog</h2>
-                     <p>Lorem Ipsum available, but the majority have suffered </p>
+                     <p>Our Lastest blog, comfort and satisfaction our concern </p>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-md-4">
+               {/* <div class="col-md-4">
                   <div class="blog_box">
                      <div class="blog_img">
                         <figure><img src="assets/images/blog1.jpg" alt="#"/></figure>
@@ -213,7 +215,8 @@ const DashBoard = () => {
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
                      </div>
                   </div>
-               </div>
+               </div> */}
+                <ComingSoon />
             </div>
          </div>
       </div>

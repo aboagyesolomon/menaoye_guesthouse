@@ -1,4 +1,6 @@
 import React from "react";
+import ComingSoon from "./CoomingSoon";
+
 
 
 const Blog = () => {
@@ -22,12 +24,12 @@ const Blog = () => {
                <div class="col-md-12">
                   <div class="titlepage">
                     
-                     <p class="margin_0">Lorem Ipsum available, but the majority have suffered </p>
+                     <p class="margin_0">Your satisfaction and comfort is our goal </p>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-md-4">
+               {/* <div class="col-md-4">
                   <div class="blog_box">
                      <div class="blog_img">
                         <figure><img src="assets/images/blog1.jpg" alt="#"/></figure>
@@ -62,10 +64,13 @@ const Blog = () => {
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
                      </div>
                   </div>
-               </div>
+               </div> */}
+               <ComingSoon/>
             </div>
          </div>
       </div>
+      
+      
     </>);
 
 };

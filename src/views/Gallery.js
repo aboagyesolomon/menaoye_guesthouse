@@ -1,4 +1,5 @@
 import React from "react";
+import ComingSoon from "./CoomingSoon";
 
 
 const Gallery = () => {
@@ -21,7 +22,7 @@ const Gallery = () => {
          <div class="container">
            
             <div class="row">
-               <div class="col-md-3 col-sm-6">
+               {/* <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
                      <figure><img src="assets/images/gallery1.jpg" alt="#"/></figure>
                   </div>
@@ -60,7 +61,8 @@ const Gallery = () => {
                   <div class="gallery_img">
                      <figure><img src="assets/images/gallery8.jpg" alt="#"/></figure>
                   </div>
-               </div>
+               </div> */}
+                <ComingSoon />
             </div>
          </div>
       </div>

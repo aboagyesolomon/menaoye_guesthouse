@@ -20,34 +20,36 @@ const Contact = () => {
       });
    };
 
-   const handleSubmit = async (e) => {
-      e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-      try {
-         const response = fetch('https://mena-oye-backend.onrender.com/send-email', {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formItems)
-         });
+  try {
+    const response = await fetch('https://mena-oye-backend.onrender.com/contact-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formItems)
+    });
 
-         if (response.ok) {
-            await Swal.fire('Success', 'Booking submitted successfully!', 'success');
-          } else {
-            await Swal.fire('Error', 'Something went wrong. Please try again.', 'error');
-          }
-      } catch (error) {
-         console.error('Error submitting form:', error);
-      await Swal.fire('Error', 'Network error. Please try again.', 'error');
-      };
-      setFormItems({
-         name: "",
-         email: "",
-         phone: "",
-         message: ""
-      });
-   }
+    if (response.ok) {
+      await Swal.fire('Success', 'Message sent successfully!', 'success');
+    } else {
+      await Swal.fire('Error', 'Something went wrong. Please try again.', 'error');
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    await Swal.fire('Error', 'Network error. Please try again.', 'error');
+  }
+
+  setFormItems({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+};
+
 
     return(<>
      <div class="back_re">

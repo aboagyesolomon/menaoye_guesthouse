@@ -1,4 +1,5 @@
 import React from "react";
+import ComingSoon from "./CoomingSoon";
 
 
 const Room = () => {
@@ -21,12 +22,12 @@ const Room = () => {
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <p  class="margin_0">Lorem Ipsum available, but the majority have suffered </p>
+                     <p  class="margin_0">Your satisfaction and comfort is our goal</p>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-md-4 col-sm-6">
+               {/* <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
                         <figure><img src="assets/images/rooom1.jpg" alt="#"/></figure>
@@ -91,7 +92,8 @@ const Room = () => {
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
                      </div>
                   </div>
-               </div>
+               </div> */}
+                <ComingSoon />
             </div>
          </div>
       </div>
