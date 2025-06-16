@@ -48,7 +48,7 @@ const DashBoard = () => {
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/rooom6.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom6.JPG" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -59,7 +59,7 @@ const DashBoard = () => {
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/rooom7.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom7.JPG" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -70,7 +70,7 @@ const DashBoard = () => {
                <div class="col-md-4 col-sm-6">
                   <div id="serv_hover"  class="room">
                      <div class="room_img">
-                        <figure><img src="assets/images/rooom8.jpg" alt="#"/></figure>
+                        <figure><img src="assets/images/rooom8.JPG" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
                         <h3>Wash Room</h3>
