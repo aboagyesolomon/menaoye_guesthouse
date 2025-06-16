@@ -65,7 +65,7 @@ const Blog = () => {
                      </div>
                   </div>
                </div> */}
-               <ComingSoon/>
+               <ComingSoon />
             </div>
          </div>
       </div>
