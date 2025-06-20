@@ -43,9 +43,9 @@ const Footer = () => {
             <div class="copyright">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-10 offset-md-1">
+                     <div class="col-md-10 offset-md-1" style={{ fontSize: "1px"}}>
                         <p>
-                        © 2025 All Rights Reserved. Design by <a href="/"> Solomon Aboagye</a>
+                        © 2025 All Rights Reserved,<a href="/"> Dominic Amoako</a>
                         <br/><br/>
                         Distributed by <a href="/" target="_blank">Emir Networking</a>
                         </p>
