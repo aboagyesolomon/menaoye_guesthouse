@@ -95,7 +95,7 @@ const DashBoard = () => {
                         <figure><img src="assets/images/rooom5.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Cooking Area</h3>
+                        <h3>Kitchen</h3>
                         <p>Kitchens, in every room we take care of your cravings as well as your comfort.</p>
                      </div>
                   </div>
@@ -106,7 +106,7 @@ const DashBoard = () => {
                         <figure><img src="assets/images/rooom3.jpg" alt="#"/></figure>
                      </div>
                      <div class="bed_room">
-                        <h3>Alley Way</h3>
+                        <h3>Hall Way</h3>
                         <p>If you are going to use a passage of comfort, you need to be sure there </p>
                      </div>
                   </div>
