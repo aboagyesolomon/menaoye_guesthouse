@@ -32,8 +32,8 @@ const Footer = () => {
                         <button class="sub_btn">subscribe</button>
                      </form>
                      <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/kwaku.adu.515581/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://x.com/menaoye_guest?s=11"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                      </ul>
